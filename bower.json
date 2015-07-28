@@ -1,0 +1,34 @@
+{
+  "name": "bail",
+  "main": "bail.js",
+  "description": "Throw a given error",
+  "license": "MIT",
+  "keywords": [
+    "fail",
+    "bail",
+    "throw",
+    "callback",
+    "error"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wooorm/bail.git"
+  },
+  "authors": [
+    "Titus Wormer <tituswormer@gmail.com>"
+  ],
+  "ignore": [
+    ".*",
+    "*.log",
+    "*.md",
+    "build/",
+    "components/",
+    "coverage/",
+    "node_modules/",
+    "build.js",
+    "index.js",
+    "test.js",
+    "component.json",
+    "package.json"
+  ]
+}
