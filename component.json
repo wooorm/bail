@@ -1,6 +1,6 @@
 {
   "name": "bail",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Throw a given error",
   "license": "MIT",
   "keywords": [
