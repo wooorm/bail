@@ -1,11 +1,15 @@
 /**
  * @author Titus Wormer
- * @copyright 2015 Titus Wormer. All rights reserved.
+ * @copyright 2015 Titus Wormer
+ * @license MIT
  * @module bail
  * @fileoverview Throw a given error.
  */
 
 'use strict';
+
+/* Expose. */
+module.exports = bail;
 
 /**
  * Throw a given error.
@@ -24,13 +28,7 @@
  * @throws {Error} - `err`, when given.
  */
 function bail(err) {
-    if (err) {
-        throw err;
-    }
+  if (err) {
+    throw err;
+  }
 }
-
-/*
- * Expose.
- */
-
-module.exports = bail;

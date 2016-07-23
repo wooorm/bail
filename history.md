@@ -1,9 +1,6 @@
----
-mdast:
-  setext: true
----
+<!--remark setext-->
 
-<!--lint disable no-multiple-toplevel-headings -->
+<!--lint disable no-multiple-toplevel-headings-->
 
 1.0.0 / 2015-07-28
 ==================

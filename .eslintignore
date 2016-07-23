@@ -1,7 +1,0 @@
-build/
-components/
-coverage/
-build.js
-bail.js
-bail.min.js
-example.js

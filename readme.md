@@ -1,19 +1,16 @@
-# bail [![Build Status](https://img.shields.io/travis/wooorm/bail.svg)](https://travis-ci.org/wooorm/bail) [![Coverage Status](https://img.shields.io/codecov/c/github/wooorm/bail.svg)](https://codecov.io/github/wooorm/bail?branch=master)
+# bail [![Build Status][travis-badge]][travis] [![Coverage Status][codecov-badge]][codecov]
+
+<!--lint disable heading-increment list-item-spacing-->
 
 :warning: Throw a given error.
 
 ## Installation
 
-[npm](https://docs.npmjs.com/cli/install):
+[npm][npm-install]:
 
 ```bash
 npm install bail
 ```
-
-**bail** is also available for [bower](http://bower.io/#install-packages),
-[component](https://github.com/componentjs/component), [duo](http://duojs.org/#getting-started),
-and for AMD, CommonJS, and globals ([uncompressed](bail.js) and
-[compressed](bail.min.js)).
 
 ## Usage
 
@@ -31,22 +28,46 @@ bail(new Error('failure'));
 
 ## API
 
-### bail(err?)
+### `bail([err])`
 
 Throw a given error.
 
-**Parameters**
+###### Parameters
 
-*   `err` (`Error`, optional) — Optional error.
+*   `err` (`Error?`) — Optional error.
 
-**Throws**
+###### Throws
 
-*   `Error` - `err`, When given.
+*   `Error` — Given error, if any.
 
-## Why
+## Related
 
-No one modularized this yet. And the name was available.
+*   [`noop`][noop];
+*   [`noop2`][noop2];
+*   [`noop3`][noop3];
 
 ## License
 
-[MIT](LICENSE) @ [Titus Wormer](http://wooorm.com)
+[MIT][license] © [Titus Wormer][author]
+
+<!-- Definitions -->
+
+[travis-badge]: https://img.shields.io/travis/wooorm/bail.svg
+
+[travis]: https://travis-ci.org/wooorm/bail
+
+[codecov-badge]: https://img.shields.io/codecov/c/github/wooorm/bail.svg
+
+[codecov]: https://codecov.io/github/wooorm/bail
+
+[npm-install]: https://docs.npmjs.com/cli/install
+
+[license]: LICENSE
+
+[author]: http://wooorm.com
+
+[noop]: https://www.npmjs.com/package/noop
+
+[noop2]: https://www.npmjs.com/package/noop2
+
+[noop3]: https://www.npmjs.com/package/noop3
