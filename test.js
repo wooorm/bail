@@ -1,11 +1,3 @@
-/**
- * @author Titus Wormer
- * @copyright 2015 Titus Wormer
- * @license MIT
- * @module bail
- * @fileoverview Test suite for `bail`.
- */
-
 'use strict';
 
 /* Dependencies. */
