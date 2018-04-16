@@ -1,10 +1,11 @@
 language: node_js
 node_js:
-- '4.0'
-- '8.0'
+- lts/boron
+- node
 after_success: bash <(curl -s https://codecov.io/bash)
 deploy:
   provider: releases
+  skip_cleanup: true
   api_key:
     secure: HGcZRMo3iPRl7jxyzDMT4RsZz7rb7eQlSRU/S4hRtdQSS4V//f612wPGMv+tVF1WqdiLMWMmb4R7i+Z4ZF6pfVxPxn8Fg9VW05L3VuNzuZ06NhL0AaUWG34Z0myspoPk3ZSTKaaFRdeaxxe99d4H4JvsuC0xqUK8bweUDZYm3wsL2gUrndznNxlp4+1+GoAvVosO1dx/BZpk5Lv/yVwWjAIooiSMR28NM8hNP/fgSCD0SBIgdbUCz5JhIy5qLLyNeN/2cgDjPyObbgdeXhv4/yHvYrTTOxTPNhCGJqWgwwyx43PnN5Kdu0pxT30Q4VG+T8bqkSVHz7F9waaUWxGLAjBL+Wo5iNZb1/8if5oOJsKHdRC2e/JHT361ragYgPRL3cp6LBlSApsvDm/yttniHLHh7XdmDUEnEJcZkyfHXej/ahJeK7ngExXtDpVMQRbaqjfVysLR0vYweRJ0lp+m45XwaFzqsV7MuYv1T1zL4FixndidJs4car9jw3ynL8l7zC+YnTEqcCAgGcgBdy+YxqYfdE+/SCkBfkRI/gFHKmyVzQTxB3duOFBYmZiaNiQWkESSHkoooVZG/M0idFybvSHiA1QTz7ivucOIO7v0zJRfSyPxhsibtHY/UUWglPiu2gp62t15X7sXWW0iRQmeKWoMmUgPGRJyCaeY88Kw7Cc=
   file:
@@ -12,4 +13,3 @@ deploy:
     - "bail.min.js"
   on:
     tags: true
-    node: '8.0'
