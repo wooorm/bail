@@ -1,10 +1,8 @@
 'use strict';
 
-/* Dependencies. */
 var test = require('tape');
-var bail = require('./');
+var bail = require('.');
 
-/* Tests. */
 test('bail([err])', function (t) {
   t.doesNotThrow(function () {
     bail();
