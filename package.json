@@ -13,7 +13,7 @@
   "files": [
     "index.js"
   ],
-  "repository": "https://github.com/wooorm/bail",
+  "repository": "wooorm/bail",
   "bugs": "https://github.com/wooorm/bail/issues",
   "author": "Titus Wormer <tituswormer@gmail.com> (http://wooorm.com)",
   "contributors": [
