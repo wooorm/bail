@@ -10,14 +10,14 @@
     "callback",
     "error"
   ],
-  "files": [
-    "index.js"
-  ],
   "repository": "wooorm/bail",
   "bugs": "https://github.com/wooorm/bail/issues",
   "author": "Titus Wormer <tituswormer@gmail.com> (http://wooorm.com)",
   "contributors": [
     "Titus Wormer <tituswormer@gmail.com> (http://wooorm.com)"
+  ],
+  "files": [
+    "index.js"
   ],
   "dependencies": {},
   "devDependencies": {
