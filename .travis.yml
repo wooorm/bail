@@ -4,19 +4,12 @@ node_js:
 - '8.0'
 after_success: bash <(curl -s https://codecov.io/bash)
 deploy:
-  - provider: npm
-    email: tituswormer@gmail.com
-    api_key:
-      secure: JRHu9kFxIHsm0P07amyqhElpEdRtMkh+5UFoc+XHyoDnaCd4uRv+8m3UQNVhiq32Ro7C9AUdiyODOP+b5zqKtVVdERLd/mW7ZCNKHhbK4PQABFShak/qOqVDK1tgy+hYS1L+EOqo2ytii3Tkp8Wlc+NgbxIKj6x/6I0xmpwOSYK12gDwe2vw0mfXTCX54mbbLH2yVYPMcxcEa8BLBVL3TQPZptXMVLPI+3Z2rWRXxLJwlVEvKb0S0bGc/md/JxrFfqVZh9b7CS23NmoXy/YFXjYIorcC+xrKpWKu3EiPTuoI9fUx9D3EU8R1/jLY+qfHpjyAsfizF/59yMqupHPhgYDAqdOdNwCFikD60qUh1Lqe1FVCuaJ+/y6hvIggmA/DRKNXPsHpVpzvfZBIyrFEeYnJVp9mzDq9HFxr9rZE6Nj4O/dWGYwwjz0XfMrR+npxZtvqp8+23Ef3tnMagwtxBHXftu9m2Zx/c2uggMXj39eYU7IWRb4Jn0F7FG4TfIEko1OaIz+QipvMob282pWwWrTENBMVKFxDZiG9FPSNZn+zctUBw3oBcBZL5yFOQDLAc2q798O/u6vXjxdKGWqKEsCebFBoflEKVhmyQ/utEoCIwbAVUhhVQaRMngr1QwO6cStmCVUkFAxTneqSTCRsGLO32bUCP+zFeIMuU/GYqKY=
-    on:
-      tags: true
-      node: '4.0'
-  - provider: releases
-    api_key:
-      secure: HGcZRMo3iPRl7jxyzDMT4RsZz7rb7eQlSRU/S4hRtdQSS4V//f612wPGMv+tVF1WqdiLMWMmb4R7i+Z4ZF6pfVxPxn8Fg9VW05L3VuNzuZ06NhL0AaUWG34Z0myspoPk3ZSTKaaFRdeaxxe99d4H4JvsuC0xqUK8bweUDZYm3wsL2gUrndznNxlp4+1+GoAvVosO1dx/BZpk5Lv/yVwWjAIooiSMR28NM8hNP/fgSCD0SBIgdbUCz5JhIy5qLLyNeN/2cgDjPyObbgdeXhv4/yHvYrTTOxTPNhCGJqWgwwyx43PnN5Kdu0pxT30Q4VG+T8bqkSVHz7F9waaUWxGLAjBL+Wo5iNZb1/8if5oOJsKHdRC2e/JHT361ragYgPRL3cp6LBlSApsvDm/yttniHLHh7XdmDUEnEJcZkyfHXej/ahJeK7ngExXtDpVMQRbaqjfVysLR0vYweRJ0lp+m45XwaFzqsV7MuYv1T1zL4FixndidJs4car9jw3ynL8l7zC+YnTEqcCAgGcgBdy+YxqYfdE+/SCkBfkRI/gFHKmyVzQTxB3duOFBYmZiaNiQWkESSHkoooVZG/M0idFybvSHiA1QTz7ivucOIO7v0zJRfSyPxhsibtHY/UUWglPiu2gp62t15X7sXWW0iRQmeKWoMmUgPGRJyCaeY88Kw7Cc=
-    file:
-      - "bail.js"
-      - "bail.min.js"
-    on:
-      tags: true
-      node: '8.0'
+  provider: releases
+  api_key:
+    secure: HGcZRMo3iPRl7jxyzDMT4RsZz7rb7eQlSRU/S4hRtdQSS4V//f612wPGMv+tVF1WqdiLMWMmb4R7i+Z4ZF6pfVxPxn8Fg9VW05L3VuNzuZ06NhL0AaUWG34Z0myspoPk3ZSTKaaFRdeaxxe99d4H4JvsuC0xqUK8bweUDZYm3wsL2gUrndznNxlp4+1+GoAvVosO1dx/BZpk5Lv/yVwWjAIooiSMR28NM8hNP/fgSCD0SBIgdbUCz5JhIy5qLLyNeN/2cgDjPyObbgdeXhv4/yHvYrTTOxTPNhCGJqWgwwyx43PnN5Kdu0pxT30Q4VG+T8bqkSVHz7F9waaUWxGLAjBL+Wo5iNZb1/8if5oOJsKHdRC2e/JHT361ragYgPRL3cp6LBlSApsvDm/yttniHLHh7XdmDUEnEJcZkyfHXej/ahJeK7ngExXtDpVMQRbaqjfVysLR0vYweRJ0lp+m45XwaFzqsV7MuYv1T1zL4FixndidJs4car9jw3ynL8l7zC+YnTEqcCAgGcgBdy+YxqYfdE+/SCkBfkRI/gFHKmyVzQTxB3duOFBYmZiaNiQWkESSHkoooVZG/M0idFybvSHiA1QTz7ivucOIO7v0zJRfSyPxhsibtHY/UUWglPiu2gp62t15X7sXWW0iRQmeKWoMmUgPGRJyCaeY88Kw7Cc=
+  file:
+    - "bail.js"
+    - "bail.min.js"
+  on:
+    tags: true
+    node: '8.0'
