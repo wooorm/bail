@@ -62,7 +62,7 @@ Throw a given error.
 
 [license]: license
 
-[author]: http://wooorm.com
+[author]: https://wooorm.com
 
 [noop]: https://www.npmjs.com/package/noop
 
