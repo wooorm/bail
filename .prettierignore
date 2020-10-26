@@ -1,3 +1,5 @@
 coverage/
 bail.js
 bail.min.js
+*.json
+*.md
