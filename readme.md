@@ -55,9 +55,9 @@ Throw a given error.
 
 <!-- Definitions -->
 
-[build-badge]: https://img.shields.io/travis/wooorm/bail.svg
+[build-badge]: https://github.com/wooorm/bail/workflows/main/badge.svg
 
-[build]: https://travis-ci.org/wooorm/bail
+[build]: https://github.com/wooorm/bail/actions
 
 [coverage-badge]: https://img.shields.io/codecov/c/github/wooorm/bail.svg
 

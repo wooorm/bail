@@ -2,8 +2,8 @@
 
 module.exports = bail
 
-function bail(err) {
-  if (err) {
-    throw err
+function bail(error) {
+  if (error) {
+    throw error
   }
 }
