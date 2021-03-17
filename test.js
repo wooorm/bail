@@ -1,7 +1,5 @@
-'use strict'
-
-var test = require('tape')
-var bail = require('.')
+import test from 'tape'
+import {bail} from './index.js'
 
 test('bail([err])', function (t) {
   t.doesNotThrow(function () {

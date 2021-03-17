@@ -9,6 +9,9 @@
 
 ## Install
 
+This package is ESM only: Node 12+ is needed to use it and it must be `import`ed
+instead of `require`d.
+
 [npm][]:
 
 ```sh
@@ -30,6 +33,9 @@ bail(new Error('failure'))
 ```
 
 ## API
+
+This package exports the following identifiers: `bail`.
+There is no default export.
 
 ### `bail([err])`
 

@@ -1,8 +1,4 @@
-'use strict'
-
-module.exports = bail
-
-function bail(error) {
+export function bail(error) {
   if (error) {
     throw error
   }
