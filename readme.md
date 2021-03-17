@@ -21,7 +21,7 @@ npm install bail
 ## Use
 
 ```js
-var bail = require('bail')
+import {bail} from 'bail'
 
 bail()
 

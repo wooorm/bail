@@ -6,7 +6,16 @@ test('bail([err])', function (t) {
     bail()
   })
 
+  t.doesNotThrow(function () {
+    bail(null)
+  })
+
+  t.doesNotThrow(function () {
+    bail(undefined)
+  })
+
   t.throws(function () {
+    // @ts-ignore
     bail('foo')
   }, /foo/)
 
