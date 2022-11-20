@@ -1,27 +1,26 @@
-import test from 'tape'
+import assert from 'node:assert/strict'
+import test from 'node:test'
 import {bail} from './index.js'
 
-test('bail([err])', function (t) {
-  t.doesNotThrow(function () {
+test('bail([err])', function () {
+  assert.doesNotThrow(function () {
     bail()
   })
 
-  t.doesNotThrow(function () {
+  assert.doesNotThrow(function () {
     bail(null)
   })
 
-  t.doesNotThrow(function () {
+  assert.doesNotThrow(function () {
     bail(undefined)
   })
 
-  t.throws(function () {
-    // @ts-ignore
+  assert.throws(function () {
+    // @ts-expect-error
     bail('foo')
   }, /foo/)
 
-  t.throws(function () {
+  assert.throws(function () {
     bail(new Error('bar'))
   }, /bar/)
-
-  t.end()
 })
